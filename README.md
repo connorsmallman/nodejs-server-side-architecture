@@ -7,7 +7,7 @@ Moves business logic into services, to prevent spaghetti code, and to prevent un
 
 Services don't return anything related to the HTTP transport layer like a status code or headers. 
 
-I've add the pub/sub pattern as a simple node.js API endpoint that creates a user right now, may want to call third-party services, maybe to an analytics service, or maybe start an email sequence.
+I've add the pub/sub pattern as a simple node.js API endpoint that dispatches and event when we get a video, may want to call third-party services, maybe to an analytics service, or maybe start an email sequence.
 
 Sooner than later, that simple "create" operation will be doing several things, and you will end up with 1000 lines of code, all in a single function.
 
