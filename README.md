@@ -9,7 +9,7 @@ Services don't return anything related to the HTTP transport layer like a status
 
 I've add the pub/sub pattern as a simple node.js API endpoint that dispatches and event when we get a video, may want to call third-party services, maybe to an analytics service, or maybe start an email sequence.
 
-Sooner than later, that simple "create" operation will be doing several things, and you will end up with 1000 lines of code, all in a single function.
+Sooner than later, that simple operation will be doing several things, and you will end up with 1000 lines of code, all in a single function.
 
 That violates the principle of single responsibility.
 
